@@ -11,7 +11,7 @@ Disables incompatible MToon shaders, fixes broken texture alpha channels, maps t
 
 ## 📌 The Problem It Solves
 
-- Converts the Default Mtoon Shader to Principled Bsdf and also assigns the Image Texture to its Emission socket (You can set it to 0 if you don't want it)
+- Converts all default MToon shaders to Principled BSDF at once and connects their Image Textures to the Emission input. Set Emission Strength to 0 to disable it.
 
 ---
 
