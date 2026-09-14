@@ -11,18 +11,7 @@ Disables incompatible MToon shaders, fixes broken texture alpha channels, maps t
 
 ## 📌 The Problem It Solves
 
-When importing VRM models into Blender (e.g. via VRM Add-on), you often encounter several common issues:
-
-1. **Broken Transparency (Black Borders / Solid Cutouts)**:
-   Hair strands, eyelashes, lace, clothing hems, and decals often render with black borders or solid opaque backgrounds because the texture's **Alpha** channel is not linked to the shader's **Alpha** input.
-2. **Proprietary MToon Shader Locks**:
-   VRM uses custom MToon toon shaders (`mtoon1`). When rendering in standard EEVEE Next or Cycles, or exporting to game engines (Unity, Unreal Engine, Godot), these materials look completely wrong, unlit, or broken.
-3. **Unnatural Plastic Glossiness**:
-   Imported shaders often have reflective roughness values, causing stylized anime characters to look like wet, shiny plastic under scene lights.
-4. **Dark or Muddy Shading in Dynamic Lighting**:
-   Anime models rely on flat, unlit or self-illuminated shading. Without an emission connection, anime faces look dark, harsh, and overly shadowed.
-
-**This add-on fixes all of these issues in one click.**
+- Converts the Default Mtoon Shader to Principled Bsdf and also assigns the Image Texture to its Emission socket (You can set it to 0 if you don't want it)
 
 ---
 
